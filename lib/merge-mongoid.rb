@@ -36,7 +36,7 @@ module Mongoid
           end
           
           # saving the A model
-          self.save
+          self.save(validate: false)
           # delete the B model
           another_document.destroy 
         end
